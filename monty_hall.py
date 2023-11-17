@@ -38,9 +38,14 @@ def MontyHallSimulation (N):
     Remaining with initial selection: {"{:.1%}".format(sum(ChoiceUnchanged)/N)}\n\
     Switching doors: {"{:.1%}".format(sum(ChoiceChanged)/N)}')
             
-###############################            
+###############################
 ###### Run the Simulation######
 ###############################
-Start_time = time.time()
-MontyHallSimulation(N=100000)         
-print(f'\nSimulation Completed in: {round(time.time()-Start_time,2)} Seconds')
+#Start_time = time.time()
+#MontyHallSimulation(N=100000)
+#print(f'\nSimulation Completed in: {round(time.time()-Start_time,2)} Seconds')
+
+if __name__ == "__main__" :
+    print('======= Monty hall problem, count 10000 ========\n')
+    MontyHallSimulation(10000)
+
